@@ -1,0 +1,1 @@
+No Content: https://swazisoccer.000webhostapp.com/cordova.js

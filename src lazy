@@ -1,0 +1,94 @@
+var map = {
+	"../pages/all-matches/all-matches.module": [
+		407,
+		17
+	],
+	"../pages/home/home.module": [
+		410,
+		16
+	],
+	"../pages/league-details/league-details.module": [
+		408,
+		15
+	],
+	"../pages/match-details/match-details.module": [
+		413,
+		14
+	],
+	"../pages/notification/notification.module": [
+		409,
+		13
+	],
+	"../pages/photos-details/photos-details.module": [
+		412,
+		12
+	],
+	"../pages/photos/photos.module": [
+		411,
+		11
+	],
+	"../pages/players-stats/players-stats.module": [
+		419,
+		10
+	],
+	"../pages/profile/profile.module": [
+		415,
+		0
+	],
+	"../pages/search-pop/search-pop.module": [
+		414,
+		9
+	],
+	"../pages/select-league/select-league.module": [
+		416,
+		8
+	],
+	"../pages/setting/setting.module": [
+		424,
+		7
+	],
+	"../pages/sign-in/sign-in.module": [
+		417,
+		6
+	],
+	"../pages/sign-up/sign-up.module": [
+		418,
+		5
+	],
+	"../pages/team/team.module": [
+		420,
+		4
+	],
+	"../pages/teams-stats/teams-stats.module": [
+		421,
+		3
+	],
+	"../pages/top-news-details/top-news-details.module": [
+		423,
+		2
+	],
+	"../pages/top-news/top-news.module": [
+		422,
+		1
+	]
+};
+function webpackAsyncContext(req) {
+	var ids = map[req];
+	if(!ids)
+		return Promise.reject(new Error("Cannot find module '" + req + "'."));
+	return __webpack_require__.e(ids[1]).then(function() {
+		return __webpack_require__(ids[0]);
+	});
+};
+webpackAsyncContext.keys = function webpackAsyncContextKeys() {
+	return Object.keys(map);
+};
+webpackAsyncContext.id = 177;
+module.exports = webpackAsyncContext;
+
+
+//////////////////
+// WEBPACK FOOTER
+// ./src lazy
+// module id = 177
+// module chunks = 18
